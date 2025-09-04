@@ -5,7 +5,7 @@ export type Task = {
   title: string;
   description?: string;
   priority?: "low" | "medium" | "high";
-  assignee?: string; // 이니셜/이름
+  assignee?: string; 
   createdAt: number;
   updatedAt: number;
 };
@@ -14,7 +14,7 @@ export type Column = { id: ID; title: string };
 
 export type BoardState = {
   columns: Column[];
-  columnTaskIds: Record<ID, ID[]>; // columnId -> ordered task ids
+  columnTaskIds: Record<ID, ID[]>;
   tasks: Record<ID, Task>;
 };
 

@@ -1,11 +1,11 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import KanbanBoard from "./kanban/KanbanBoard";
-import Navbar from "./Navbar"; // ⬅️ 추가
+import Navbar from "./Navbar"; 
 
 export default function App() {
   return (
     <div className="min-h-screen">
-      <Navbar /> {/* ⬅️ 헤더 교체 */}
+      <Navbar /> 
 
       <main>
         <Routes>
